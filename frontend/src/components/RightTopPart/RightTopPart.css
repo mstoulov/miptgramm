@@ -1,0 +1,25 @@
+.RightTopPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C1DEFF;
+    border-bottom: solid 1px #3725c3;
+    height: 50px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.UserName {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+}
+
+.UserId {
+    color: #858585;
+    font-weight: 50;
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+}

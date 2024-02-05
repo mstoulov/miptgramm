@@ -1,0 +1,67 @@
+#links {
+    text-decoration: none;
+}
+
+.ChatPreview {
+    color: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: #3725c3 solid 1px;
+}
+
+.SelectedChatPreview {
+    background-color: #C1DEFF;
+}
+
+.SelectedChatPreview:hover {
+    background-color: #a0c2ff;
+}
+
+.ChatPreview:hover {
+    background-color: #e4e0e0;
+}
+
+.ChatPreviewInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ChatPreviewMeta {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.LastMessageTime {
+    font-size: 14px;
+    color: #858585;
+}
+
+.UnreadChatMarker {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #3725c3;
+    margin-left: 5px;
+}
+
+.ChatName {
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.LastMessageText {
+    font-size: 15px;
+    height: 20px;
+    overflow: hidden;
+    margin: 5px 5px 10px;
+}

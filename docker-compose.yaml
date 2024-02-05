@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend_container
+    build:
+      context: ./backend/
+    ports: # expose
+      - "8080:8080"
+    volumes:
+      - ./log:/log
+    environment:
+      - DB_URI=test.db
+    restart: unless-stopped
+
+  frontend:
+    container_name: frontend_container
+    build:
+      context: ./frontend/
+    ports: # expose
+      - "8081:8081"
+    command: serve -s /usr/src/app/build -l 8081
+    depends_on:
+      - backend
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx/
+    volumes:
+      - ./log:/log
+    ports:
+      - "80:80"
+    restart: unless-stopped

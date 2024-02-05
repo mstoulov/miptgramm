@@ -1,0 +1,6 @@
+.LeftPart {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-right: #3725c3 solid 1px;
+}

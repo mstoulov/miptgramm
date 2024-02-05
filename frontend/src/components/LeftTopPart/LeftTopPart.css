@@ -1,0 +1,16 @@
+.LeftTopPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex-shrink: 0;
+    border-bottom: #3725c3 solid 1px;
+}
+
+.SearchDialog {
+    border-radius: 30px;
+    border: #3725c3 solid 1px;
+    width: 90%;
+    align-items: center;
+    height: 70%;
+}
